@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Food Fit</string>
+    <string name="food_fit">Food Fit</string>
+    <string name="food">FRESH FOOD</string>
+    <string name="delivery">FAST DELIVERY</string>
+    <string name="payment">EASY PAYMENT</string>
+
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="f1_title">Maintain your calories and stay healthy!</string>
+    <string name="f1_desc">Achieve your health and wellness goals with our calorie maintenance feature. We provide you with the tools and guidance needed to strike the perfect balance between your daily calorie intake and physical activity. Stay on track, nourish your body with the right nutrients, and foster a healthy lifestyle.</string>
+    <string name="f2_title">Keep track of your daily calorie intake!</string>
+    <string name="f2_desc">Take control of your nutrition with our user-friendly calorie tracking system. Log your meals, snacks, and beverages effortlessly to gain insights into your daily calorie consumption. Our intuitive interface allows you to set goals, monitor your progress, and make informed decisions about your diet.</string>
+    <string name="f3_title">Get AI-generated Diet just for you!</string>
+    <string name="f3_desc">Experience the future of personalized nutrition with our AI-generated diet plans. Our cutting-edge technology analyzes your unique profile, considering factors like age, weight, health goals, and dietary preferences. Embrace the convenience of smart nutrition – your personalized AI diet awaits you!</string>
+    <string name="todo">TODO</string>
+
+
+    <string name="sign_up">Sign Up</string>
+    <string name="next"><![CDATA[Next >]]></string>
+</resources>

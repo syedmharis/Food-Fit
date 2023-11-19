@@ -19,4 +19,6 @@
 
     <string name="sign_up">Sign Up</string>
     <string name="next"><![CDATA[Next >]]></string>
+    <string name="google">Google</string>
+    <string name="sign_up_with_google">Sign Up with Google</string>
 </resources>

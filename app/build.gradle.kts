@@ -1,8 +1,8 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-
-
+    // Add the Google services Gradle plugin
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -52,6 +52,13 @@ dependencies {
     implementation ("androidx.navigation:navigation-ui-ktx:2.2.2")
     implementation ("androidx.viewpager2:viewpager2:1.0.0")
     implementation ("me.relex:circleindicator:2.1.6")
+
+    implementation(platform("com.google.firebase:firebase-bom:32.6.0"))
+    implementation("com.google.firebase:firebase-analytics")
+    implementation("com.google.firebase:firebase-auth")
+    implementation("com.google.android.gms:play-services-auth:20.7.0")
+    implementation("com.google.firebase:firebase-firestore")
+
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")

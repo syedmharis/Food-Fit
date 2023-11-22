@@ -10,21 +10,21 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="330dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="307dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="100dp"
         android:contentDescription="@string/todo"
         app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_food"
+        app:srcCompat="@drawable/diet_amico"
         tools:ignore="ImageContrastCheck" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
-        android:layout_width="382dp"
-        android:layout_height="445dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
         app:cardCornerRadius="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,7 +33,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="427dp"
+            android:layout_height="match_parent"
             tools:ignore="TextSizeCheck">
 
             <TextView
@@ -69,38 +69,22 @@
                 app:layout_constraintTop_toBottomOf="@+id/main_heading" />
 
             <Button
-                android:id="@+id/button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="@string/sign_up"
-                android:textColor="@color/black"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.112"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/sub_heading"
-                app:layout_constraintVertical_bias="0.148" />
-
-            <Button
                 android:id="@+id/next2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/next"
-                android:textColor="@color/black"
+                android:layout_marginEnd="32dp"
+                android:text="Next >"
 
+                android:textColor="@color/black"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.804"
-                app:layout_constraintStart_toEndOf="@+id/button"
                 app:layout_constraintTop_toBottomOf="@+id/sub_heading"
-                app:layout_constraintVertical_bias="0.342" />
+                app:layout_constraintVertical_bias="0.104" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     </androidx.cardview.widget.CardView>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

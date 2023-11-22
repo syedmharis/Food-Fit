@@ -17,8 +17,9 @@
     <string name="todo">TODO</string>
 
 
-    <string name="sign_up">Sign Up</string>
+    <string name="sign_up">Sign In with Google</string>
     <string name="next"><![CDATA[Next >]]></string>
     <string name="google">Google</string>
     <string name="sign_up_with_google">Sign Up with Google</string>
+    <string name="web_client_id">863031126389-692d4l9tpkh3j47jrlcbl2kro4im5srd.apps.googleusercontent.com</string>
 </resources>

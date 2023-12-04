@@ -1,4 +1,4 @@
-package com.example.foodfit
+package com.example.foodfit.ui.screens.splash_screen
 
 import android.content.Context
 import android.os.Bundle
@@ -9,6 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.example.foodfit.R
 
 class SplashFragment : Fragment() {
 

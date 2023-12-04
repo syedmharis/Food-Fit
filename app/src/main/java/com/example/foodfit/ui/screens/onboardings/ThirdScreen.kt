@@ -1,6 +1,5 @@
-package com.example.foodfit.onboarding.screens
+package com.example.foodfit.ui.screens.onboardings
 
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,13 +7,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.activity.result.ActivityResultLauncher
-import androidx.fragment.app.Fragment
 import androidx.activity.result.contract.ActivityResultContracts
-import androidx.navigation.fragment.findNavController
+import androidx.fragment.app.Fragment
+import androidx.viewpager2.widget.ViewPager2
 import com.example.foodfit.R
 import com.example.foodfit.databinding.FragmentThirdScreenBinding
 import com.google.android.gms.auth.api.signin.GoogleSignIn
-import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
@@ -95,8 +93,10 @@ class ThirdScreen : Fragment() {
                 if (task.isSuccessful) {
                     // Sign in success, update UI with the signed-in user's information
                     showToast("Login Successful")
-                    findNavController().navigate(R.id.action_viewPagerFragment_to_homeFragment)
-                    onBoardingFinished()
+//                    findNavController().navigate(R.id.action_viewPagerFragment_to_GetStartedFragment)
+//                    onBoardingFinished()
+                    val viewPager = activity?.findViewById<ViewPager2>(R.id.viewPager)
+                    viewPager?.currentItem = 3
                 } else {
                     // If sign in fails, display a message to the user.
                     showToast("Login Failed")
@@ -105,13 +105,6 @@ class ThirdScreen : Fragment() {
             }
     }
 
-    private fun onBoardingFinished() {
-        val sharedPref =
-            requireActivity().getSharedPreferences("onBoarding", Context.MODE_PRIVATE)
-        val editor = sharedPref.edit()
-        editor.putBoolean("Finished", true)
-        editor.apply()
-    }
 
     override fun onDestroyView() {
         super.onDestroyView()

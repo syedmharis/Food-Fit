@@ -1,4 +1,4 @@
-package com.example.foodfit.onboarding
+package com.example.foodfit.ui
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager

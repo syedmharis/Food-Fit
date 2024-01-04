@@ -38,15 +38,28 @@
             app:popUpTo="@id/viewPagerFragment"
             app:popUpToInclusive="true" />
 
+
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.foodfit.ui.screens.home_screen.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_search_screen"
+            app:destination="@id/search_screen" />
+    </fragment>
     <fragment
         android:id="@+id/get_started"
         android:name="com.example.foodfit.ui.screens.onboardings.GetStartedScreen"
         android:label="fragment_get_started"
         tools:layout="@layout/fragment_getting_started" />
+
+
+    <fragment
+        android:id="@+id/search_screen"
+        android:name="com.example.foodfit.ui.screens.search_screen.SearchScreen"
+        android:label="search_screen"
+        tools:layout="@layout/fragment_searchable" />
+
 </navigation>

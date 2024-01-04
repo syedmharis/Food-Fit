@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.screens.onboardings.NutrientGoalScreen">
+    tools:context=".ui.screens.onboardings.nutrient_goal.NutrientGoalScreen">
+
 
     <TextView
         android:id="@+id/nutrient_input"
@@ -15,97 +16,129 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.721"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.301" />
+        app:layout_constraintVertical_bias="0.185" />
 
     <TextView
         android:id="@+id/carbs_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
         android:layout_marginTop="36dp"
         android:fontFamily="@font/poppins_black"
         android:text="Carbs"
+
         android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/editTextCarbs"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nutrient_input" />
 
-
-    <EditText
-        android:id="@+id/editTextCarbs"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutCarbs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="272dp"
-        android:fontFamily="@font/poppins_regular"
-        android:hint="40 %"
-        android:inputType="number"
+        android:layout_marginBottom="420dp"
         android:padding="12dp"
-        android:textSize="36dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.536"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.281"
+        app:layout_constraintStart_toEndOf="@+id/carbs_label"
         app:layout_constraintTop_toBottomOf="@+id/nutrient_input"
-        app:layout_constraintVertical_bias="0.111" />
+        app:layout_constraintVertical_bias="0.0"
+        app:suffixText="%">
 
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextCarbs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="30"
+            android:textSize="26dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/protein_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="56dp"
         android:fontFamily="@font/poppins_black"
         android:text="Protein"
+
         android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/editTextProtein"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/carbs_label" />
 
-    <EditText
-        android:id="@+id/editTextProtein"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutProtein"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins_regular"
-        android:hint="30 %"
-        android:inputType="number"
+        android:layout_marginBottom="312dp"
         android:padding="12dp"
-        android:textSize="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.532"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextCarbs" />
+        app:layout_constraintHorizontal_bias="0.196"
+        app:layout_constraintStart_toEndOf="@+id/protein_label"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutCarbs"
+        app:layout_constraintVertical_bias="0.0"
+        app:suffixText="%">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextProtein"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="40"
+            android:textSize="26dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/fat_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="72dp"
         android:fontFamily="@font/poppins_black"
         android:text="Fat"
+
         android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/editTextFat"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/protein_label" />
 
-    <EditText
-        android:id="@+id/editTextFat"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutFat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:fontFamily="@font/poppins_regular"
-        android:hint="30 %"
-        android:inputType="number"
+        android:layout_marginBottom="192dp"
         android:padding="12dp"
-        android:textSize="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.539"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextProtein" />
+        app:layout_constraintHorizontal_bias="0.393"
+        app:layout_constraintStart_toEndOf="@+id/fat_label"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutProtein"
+        app:layout_constraintVertical_bias="0.0"
+        app:suffixText="%">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextFat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="30"
+            android:textSize="26dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/nutrient_input_button_next"

@@ -7,5 +7,5 @@ data class Product(
     val imageFrontThumbUrl: String?,
     val nutriments: Nutriments,
     @SerializedName("product_name")
-    val productName: String?
+    val productName: String
 )

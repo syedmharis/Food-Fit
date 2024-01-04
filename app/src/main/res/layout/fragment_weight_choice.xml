@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.screens.onboardings.WeightChoiceScreen">
+    tools:context=".ui.screens.onboardings.weight_choice_screen.WeightChoiceScreen">
 
     <TextView
         android:id="@+id/weight_choice_selection"

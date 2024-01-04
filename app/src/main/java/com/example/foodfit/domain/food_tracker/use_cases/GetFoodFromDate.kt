@@ -1,7 +1,7 @@
-package com.example.calorietracker.domain.food_tracker.use_cases
+package com.example.foodfit.domain.food_tracker.use_cases
 
 import com.example.foodfit.domain.food_tracker.model.TrackedFood
-import com.example.calorietracker.domain.food_tracker.respository.FoodTrackerRepository
+import com.example.foodfit.domain.food_tracker.respository.FoodTrackerRepository
 import kotlinx.coroutines.flow.Flow
 import java.time.LocalDate
 

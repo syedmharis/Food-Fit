@@ -12,4 +12,5 @@ import com.example.foodfit.data.local.entity.FoodEntity
 abstract class FoodDatabase: RoomDatabase() {
 
     abstract val dao: FoodDao
+
 }

@@ -1,9 +1,9 @@
-package com.example.calorietracker.domain.food_tracker.use_cases
+package com.example.foodfit.domain.food_tracker.use_cases
 
 import com.example.foodfit.domain.food_tracker.model.MealType
 import com.example.foodfit.domain.food_tracker.model.TrackableFood
 import com.example.foodfit.domain.food_tracker.model.TrackedFood
-import com.example.calorietracker.domain.food_tracker.respository.FoodTrackerRepository
+import com.example.foodfit.domain.food_tracker.respository.FoodTrackerRepository
 import java.time.LocalDate
 
 class TrackFood(

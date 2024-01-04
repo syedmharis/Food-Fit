@@ -43,9 +43,9 @@ class CalculateMealNutrients(
 
 
         val caloryGoal = dailyCaloryRequirement(userInfo)
-        val carbsGoal = (caloryGoal * userInfo.carbRatio / 4f).roundToInt()
-        val proteinGoal = (caloryGoal * userInfo.proteinRatio / 4f).roundToInt()
-        val fatGoal = (caloryGoal * userInfo.fatRatio / 9f).roundToInt()
+        val carbsGoal = (caloryGoal * userInfo.carbRatio.toFloat() / 4f).roundToInt()
+        val proteinGoal = (caloryGoal * userInfo.proteinRatio.toFloat() / 4f).roundToInt()
+        val fatGoal = (caloryGoal * userInfo.fatRatio.toFloat() / 9f).roundToInt()
 
         return Result(
             carbsGoal = carbsGoal,
